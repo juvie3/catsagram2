@@ -1,0 +1,134 @@
+
+    * {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: #F4F1EA;;
+    }
+
+    .x {
+      animation: x 13s linear infinite alternate;
+      /* border: 1px solid black; */
+      position: fixed;
+
+    }
+
+    .y {
+      animation: y 7s linear infinite alternate;
+      border: 1px solid black;
+
+    }
+
+    @keyframes x {
+      100% {
+        transform: translateX(calc(95vw - 10vw));
+      }
+    }
+    @keyframes y {
+      100% {
+        transform: translateY(calc(95vh - 22vh));
+      }
+    }
+
+    .y:hover {
+      animation-play-state: paused;
+    }
+
+    .x:hover {
+      animation-play-state: paused;
+    }
+
+    img {
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      transition: 1s;
+    }
+
+    img:hover {
+      cursor: pointer;
+      /* height: unset;
+      width: unset; */
+      border-radius: unset;
+    }
+
+    /* #imgCenter:hover {
+      height: unset;
+      width: unset;
+      border-radius: unset;
+    } */
+
+    h1 {
+      transition: all 1s;
+    }
+
+    h1:hover {
+      cursor: pointer;
+      color: rgb(245, 10, 10);
+    }
+
+    .downBttn {
+      box-shadow:inset 0px 1px 0px 0px #ffffff;
+      background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+      background-color:#ffffff;
+      border-radius:6px;
+      border:1px solid #dcdcdc;
+      display:inline-block;
+      cursor:pointer;
+      color:#666666;
+      /* font-family:Arial; */
+      font-size:20px;
+      font-weight:bold;
+      padding:3px 4px;
+      text-decoration:none;
+      text-shadow:0px 1px 0px #ffffff;
+      transition: all 1s;
+    }
+    .downBttn:hover {
+      background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+      background-color:#f6f6f6;
+      color: rgb(245, 10, 10);
+      border: 1px solid rgb(245, 10, 10);
+    }
+    .downBttn:active {
+      position:relative;
+      top:1px;
+    }
+
+    .inPut {
+      padding: 10px;
+      margin: 10px, 0;
+      /* border: 2px solid #dcdcdc;*/
+      border:0;
+      box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+      border-radius: 10px;
+      transition: all 3s;
+    }
+
+    .inPut:hover {
+      box-shadow:0 0 10px rgb(245, 10, 10);
+    }
+
+    .display {
+      opacity: .5;
+      background-color: white;
+      /* border: .5px solid rgb(245, 10, 10); */
+      box-shadow:0 0 25px 1px black;
+      transition: all 3s;
+    }
+
+    .display:hover {
+      opacity: 1;
+      cursor:pointer;
+      border: 0;
+      box-shadow: 0 0 5px 1px rgb(245, 10, 10);
+    }
+
+    .score {
+      font-size: 35px;
+      border: 0;
+      box-shadow: 0 0 5px 1px rgb(245, 10, 10);
+      padding: 0 5px;
+      margin-bottom: 10px;
+    }
