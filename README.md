@@ -2,7 +2,7 @@
 
 ## My First Website
 
-To run it:
+It runs on Node.js:
 
-Clone to local repository, and in root directory run 'node app.js'
+Clone to local repository, and in the root directory use command 'node app.js'
 
